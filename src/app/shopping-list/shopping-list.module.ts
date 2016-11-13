@@ -15,8 +15,6 @@ import { ShoppingListAddComponent } from './shopping-list-add.component';
   imports: [
 	  FormsModule,
 	  CommonModule
-	  /*,
-	  ReactiveFormsModule*/
   ]
 })
 
