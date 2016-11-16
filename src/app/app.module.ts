@@ -26,17 +26,17 @@ import { RecipeService } from "./recipes/recipe.service";
     AppComponent,
     HeaderComponent,
     DropdownDirective,
-    HomeComponent,
-    ShoppingListComponent
+    HomeComponent
   ],
   imports: [
 	  FormsModule,
-    ReactiveFormsModule,
     BrowserModule,
     HttpModule,
+    ReactiveFormsModule,
+    ShoppingListModule,
     routing
   ],
-  providers: [ShoppingListService, ShoppingListModule, RecipeService],
+  providers: [ShoppingListService,  RecipeService],
   entryComponents: [AppComponent],
   bootstrap: [AppComponent]
 })

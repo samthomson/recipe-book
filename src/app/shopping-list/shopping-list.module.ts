@@ -15,7 +15,8 @@ import { ShoppingListAddComponent } from './shopping-list-add.component';
   imports: [
 	  FormsModule,
 	  CommonModule
-  ]
+  ],
+  exports: [ShoppingListComponent]
 })
 
 export class ShoppingListModule {}
