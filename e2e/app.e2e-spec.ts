@@ -1,3 +1,4 @@
+
 import { RecipeBookNewPage } from './app.po';
 
 describe('recipe-book-new App', function() {
@@ -10,5 +11,6 @@ describe('recipe-book-new App', function() {
   it('should display message saying app works', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('app works!');
+
   });
 });
