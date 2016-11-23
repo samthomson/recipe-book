@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 
+import { HeaderComponent } from './header.component';
+import { RecipesComponent } from './recipes';
+import { ShoppingListComponent } from './shopping-list';
+import { RecipeService } from './recipes/recipe.service';
+
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'rb-root',
+  templateUrl: 'app.component.html',
+  providers: [RecipeService]
 })
 export class AppComponent {
-  title = 'app works!';
 }
