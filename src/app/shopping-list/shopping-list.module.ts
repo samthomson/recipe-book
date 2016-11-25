@@ -1,11 +1,13 @@
 
 import { NgModule } from "@angular/core";
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
 
 import { ShoppingListComponent } from './shopping-list.component';
 import { ShoppingListAddComponent } from './shopping-list-add.component';
 
+import { shoppingListRouting } from './shopping-list.routing';
+
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { ShoppingListAddComponent } from './shopping-list-add.component';
   ],
   imports: [
 	  FormsModule,
-	  CommonModule
+	  SharedModule,
+    shoppingListRouting
   ],
   exports: [ShoppingListComponent]
 })
